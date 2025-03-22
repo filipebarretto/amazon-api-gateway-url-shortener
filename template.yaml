@@ -197,7 +197,7 @@ Resources:
   AmplifyApp:
     Type: AWS::Amplify::App
     Properties:
-      Name: Url-Shortener-Client
+      Name: BDURLShortenerClient
       Description: Basic client for URL Shortner
       Repository: !Ref GithubRepository
       AccessToken: !Ref PersonalAcessToken
