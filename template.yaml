@@ -187,6 +187,11 @@ Resources:
   ##   CloudFront access logs storage
   CloudFrontAccessLogsBucket:
     Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: LogDeliveryWrite
+      OwnershipControls:
+        Rules:
+          - ObjectOwnership: BucketOwnerPreferred
 
   ##   Amplify Application for hosting
   AmplifyApp:
